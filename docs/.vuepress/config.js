@@ -2,7 +2,7 @@
 const path = require('path')
 
 module.exports = {
-  title: '山妖',
+  title: '光明山',
   description: '山妖的老窝',
   base: '/vue-blog/dist/',
   dest: 'docs/dist',
@@ -22,7 +22,17 @@ module.exports = {
     editLinks: false,
     docsDir: 'docs',
     authorAvatar: '/spider.jpg',
-
+    // valineConfig: {
+    //   appId: '7UVrYoXI8L5RbdVsYkR2Ruiq-gzGzoHsz',     // your appId
+    //   appKey: 'Q1U9mUiXSYTmEGLIbofuh4n7' // your appKey
+    // },
+    // vssueConfig: {
+    //   platform: 'github',
+    //   owner: 'wfwfwf',
+    //   repo: 'blog',
+    //   clientId: 'soso',
+    //   clientSecret: 'mamahuhu'
+    // },
     // record: 'ICP 备案文案',
     // recordLink: 'ICP 备案指向链接',
     // cyberSecurityRecord: '公安部备案文案',
@@ -50,7 +60,7 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
-      { text: 'External', link: 'https://www.baidu.com' },
+      { text: 'External', link: 'https://github.com/wfwfwf/vue-blog' },
     ],
     sidebar: 'auto', // 侧边栏配置
     // sidebar: {
@@ -71,8 +81,19 @@ module.exports = {
     },
     plugins: [
       [require('./plugins/demo/')]
-      // ["@vuepress-reco/kan-ban-niang", true], // disabled.
-      // ["@vuepress-reco/extract-code", true], // disabled.
+      // ["@vuepress-reco/vuepress-plugin-kan-ban-niang",
+      //   {
+      //     theme: ["shizuku"],
+      //     clean: true,
+      //     modelStyle: {
+      //       position: "fixed",
+      //       left: "0px",
+      //       bottom: "0px",
+      //       opacity: "0.9",
+      //       zIndex: 99999
+      //     }
+      //   }
+      // ]
     ],  
     // markdown: {
     //   // markdown-it-anchor 的选项

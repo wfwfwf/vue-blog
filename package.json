@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "lint": "vue-cli-service lint",
-    "dev": "vuepress dev docs",
+    "dev": "vuepress dev docs --no-cache",
     "docs:dev": "vuepress dev docs --cache .cache",
     "build": "vuepress build docs --no-cache"
   },
@@ -16,6 +16,7 @@
     "block"
   ],
   "dependencies": {
+    
     "core-js": "2.6.5",
     "element-ui": "^2.13.2",
     "highlight.js": "^9.12.0",
@@ -30,7 +31,8 @@
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11",
-    "vuepress": "^1.4.1"
+    "vuepress": "^1.4.1",
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5"
   },
   "author": "wf",
   "license": "MIT",

@@ -36,7 +36,6 @@ tags:
     <div>{{txt}}</div>
   </div>
 </template>
-
 <script>
 export default {
   name: 'HelloWorld',
@@ -50,7 +49,6 @@ export default {
   }
 }
 </script>
-
 <style>
 h3 {
   margin: 40px 0 0;

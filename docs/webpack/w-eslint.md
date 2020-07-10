@@ -8,6 +8,8 @@ tags:
  - webpack
  - vue-cli
 publish: true
+prev: ../vue/v-vscode
+next: ./w-vuecli
 ---
 
 
